@@ -1,0 +1,8 @@
+C:\Users\fabin\source\repos\Chave_assimetrica\bin\Debug\Chave_assimetrica.exe.config
+C:\Users\fabin\source\repos\Chave_assimetrica\bin\Debug\Chave_assimetrica.exe
+C:\Users\fabin\source\repos\Chave_assimetrica\bin\Debug\Chave_assimetrica.pdb
+C:\Users\fabin\source\repos\Chave_assimetrica\obj\Debug\Chave_assimetrica.csproj.AssemblyReference.cache
+C:\Users\fabin\source\repos\Chave_assimetrica\obj\Debug\Chave_assimetrica.csproj.CoreCompileInputs.cache
+C:\Users\fabin\source\repos\Chave_assimetrica\obj\Debug\Chave_assimetrica.exe
+C:\Users\fabin\source\repos\Chave_assimetrica\obj\Debug\Chave_assimetrica.pdb
+C:\Users\fabin\source\repos\Chave_assimetrica\obj\Debug\Chave_assimetrica.exe.config
