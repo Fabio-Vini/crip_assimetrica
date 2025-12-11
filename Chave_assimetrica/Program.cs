@@ -15,7 +15,6 @@ namespace Chave_assimetrica
             }
         }
 
-        // Extrair chave pública a partir da privada
         public static RSAParameters GerarChavePublica(RSAParameters chavePrivada)
         {
             return new RSAParameters
@@ -25,7 +24,6 @@ namespace Chave_assimetrica
             };
         }
 
-        // Criptografa APENAS com chave pública
         public static string CriptografarComChavePublica(string texto, RSAParameters chavePublica)
         {
             using (RSACryptoServiceProvider rsa = new RSACryptoServiceProvider())
@@ -39,7 +37,6 @@ namespace Chave_assimetrica
             }
         }
 
-        // Descriptografa APENAS com chave privada
         public static string DescriptografarComChavePrivada(string base64, RSAParameters chavePrivada)
         {
             byte[] dadosCript = Convert.FromBase64String(base64);
@@ -67,9 +64,6 @@ namespace Chave_assimetrica
             Console.Write("\nDigite o texto para criptografar: ");
             string texto = Console.ReadLine();
 
-            // --------------------
-            // CRIPTOGRAFAR (pública)
-            // --------------------
             string textoCriptografado = CriptografarComChavePublica(texto, chavePublica);
 
             Console.WriteLine("\n--- TEXTO CRIPTOGRAFADO ---");
@@ -83,9 +77,6 @@ namespace Chave_assimetrica
 
             try
             {
-                // -----------------------
-                // DESCRIPTOGRAFAR (privada)
-                // -----------------------
                 string textoDescriptografado = DescriptografarComChavePrivada(colado, chavePrivada);
 
                 Console.WriteLine("\n--- TEXTO DESCRIPTOGRAFADO ---");
@@ -101,3 +92,4 @@ namespace Chave_assimetrica
         }
     }
 }
+
