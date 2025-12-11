@@ -1,0 +1,1 @@
+# crip_assimetrica
